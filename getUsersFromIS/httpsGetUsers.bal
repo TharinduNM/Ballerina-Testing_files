@@ -2,6 +2,7 @@ package wso2.samples.getUsersFromIS;
 
 
 import ballerina.net.http;
+import ballerina.io;
 
 function main(string[] args){
     endpoint<http:HttpClient> httpEndPoint{
@@ -19,7 +20,7 @@ function main(string[] args){
     payload, _ = <json>str;
     ///////////////////////////////////////////////////////////////
 
-    println(payload);
+    io:println(payload);
 
 }
 
